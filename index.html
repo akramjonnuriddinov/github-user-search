@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>devfinder</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="container site-header__container">
+      <h1 class="site-header__title">devfinder</h1>
+      <button class="dark-mode-btn">
+        <span class="dark-mode-btn__text">LIGHT</span>
+        <svg class="dark-mode-btn__icon" width="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+      </button>
+    </div>
+  </header>
+  <!-- /SITE-HEADER -->
+
+  <!-- MAIN-CONTENT -->
+  <main class="main-content">
+    <section class="search">
+      <div class="container search__container">
+        <form class="search__form">
+          <input class="search__input" type="text" placeholder="Search GitHub username..." name="search">
+          <button class="search__btn" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+    <section class="user">
+      <div class="container">
+        <div class="user__container">
+          <div class="user-img-wrapper">
+            <img class="user-img" src="./img/user-img.svg" alt="" width="130px">
+          </div>
+          <div class="user__content">
+            <div class="user-data">
+              <h2 class="firstname">Test</h2>
+              <p class="user-joined-date">Joined 25 Jan 2011</p>
+            </div>
+            <p class="username">@test</p>
+            <p class="user__bio"></p>
+            <div class="repos-follow">
+              <div class="repos-follow__content">
+                <h4 class="repos-follow__title">Repos</h4>
+                <span class="repos-follow__count repos-count"></span>
+              </div>
+              <div class="repos-follow__content">
+                <h4 class="repos-follow__title">Followers</h4>
+                <span class="repos-follow__count followers-count"></span>
+              </div>
+              <div class="repos-follow__content">
+                <h4 class="repos-follow__title">Following</h4>
+                <span class="repos-follow__count following-count"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- MAIN-CONTENT -->
+
+  <script src="js/app.js"></script>
+</body>
+</html>
