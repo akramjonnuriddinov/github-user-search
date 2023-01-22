@@ -52,10 +52,10 @@ elSearchForm.addEventListener('submit', (e) => {
   getData(username.innerHTML)
     .then((data) => firstname.innerHTML = data.name);
   
-    getData(username.innerHTML)
+  getData(username.innerHTML)
     .then((data) => elUserImg.src = data.avatar_url);
-  
-    getData(username.innerHTML)
+
+  getData(username.innerHTML)
     .then((data) => elJoinedYear.innerHTML = getYear(data.created_at));
   
   getData(username.innerHTML)
