@@ -115,6 +115,10 @@ body {
   align-items: flex-start;
 }
 
+.user-img {
+  border-radius: 100%;
+}
+
 .user__content {
   width: 100%;
 }
