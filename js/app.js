@@ -1,7 +1,6 @@
 // DARK-LIGHT MODE
 const elDarkModeBtn = document.querySelector('.dark-mode-btn');
 const elDarkModeBtnText = document.querySelector('.dark-mode-btn__text');
-const elDarkModeBtnIcon = document.querySelector('.dark-mode-btn__icon');
 
 elDarkModeBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
