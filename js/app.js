@@ -17,6 +17,11 @@ const elUserImg = document.querySelector('.user-img');
 const elJoinedYear = document.querySelector('.joined-year');
 const elJoinedMonth = document.querySelector('.joined-month');
 const elJoinedDay = document.querySelector('.joined-day');
+// SOCIAL NETWORK
+const elUserLocation = document.querySelector('.user-location');
+const elUserTwitter = document.querySelector('.user-twitter');
+const elUserLink = document.querySelector('.user-link');
+const elUserEmail = document.querySelector('.user-email');
 
 const getData = async (user) => {
   const result = await fetch(`https://api.github.com/users/${user}`);
@@ -54,6 +59,18 @@ elSearchForm.addEventListener('submit', (e) => {
   
   getData(username.innerHTML)
     .then((data) => elJoinedDay.innerHTML = getDay(data.created_at));
+
+  getData(username.innerHTML)
+    .then((data) => elUserTwitter.innerHTML = data.twitter_username != null ? data.twitter_username : 'Not Avialable');
+  
+  getData(username.innerHTML)
+    .then((data) => elUserLocation.innerHTML = data.location != null ? data.location : 'Not Avialable');
+
+  getData(username.innerHTML)
+    .then((data) => elUserEmail.innerHTML = data.email != null ? data.email : 'Not Avialable');
+  
+  getData(username.innerHTML)
+    .then((data) => elUserLink.innerHTML = data.html_url);
 });
 
 function getYear(time) {

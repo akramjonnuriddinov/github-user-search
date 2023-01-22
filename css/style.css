@@ -181,3 +181,29 @@ body {
 .repos-follow__count {
   font-weight: 700;
 }
+
+
+.more-info__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more-info__item:first-child {
+  margin-bottom: 20px;
+}
+
+.more-info__inner {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  gap: 10px;
+}
+
+.more-info__text {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  max-width: 250px;
+}
