@@ -1,9 +1,14 @@
+// DARK-LIGHT MODE
 const elDarkModeBtn = document.querySelector('.dark-mode-btn');
+const elDarkModeBtnText = document.querySelector('.dark-mode-btn__text');
+const elDarkModeBtnIcon = document.querySelector('.dark-mode-btn__icon');
 
 elDarkModeBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
+  elDarkModeBtnText.innerHTML = elDarkModeBtnText.innerHTML == 'LIGHT' ? 'DARK' : 'LIGHT';
 });
 
+// USER DATA 
 const elSearchInput = document.querySelector('.search__input');
 const elSearchForm = document.querySelector('.search__form');
 const elSearchBtn = document.querySelector('.search__btn');
